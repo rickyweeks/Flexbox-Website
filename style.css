@@ -1,0 +1,221 @@
+/* global */
+/* import google font using @import */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+/* box-sizing */
+* {
+  box-sizing: border-box;
+}
+/* root variables */
+
+:root {
+  --blue: blue;
+  --gray: gray;
+  --lightblue: dodgerblue;
+}
+/* body */
+body {
+  color: black;
+  background-color: white;
+  /* the last part of the font family is backup font */
+  font-family: "Quicksand", sans-serif;
+  margin: 0 0 0 0;
+}
+
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+/* paragraph */
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* link */
+a {
+  color: var(--blue);
+}
+a:hover,
+a:focus {
+  /* outline: none; */
+  /* outline: solid blue 2px;
+  border-radius: 2px; */
+  color: magenta;
+}
+/* image */
+img {
+  max-width: 100%;
+}
+/* button */
+button {
+  cursor: pointer;
+  color: white;
+  background-color: var(--blue);
+  border: solid 3px var(--blue);
+  border-radius: 10px;
+  padding: 14px 20px;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.container {
+  /* max-width: 70rem;
+  padding-inline: 24px; */
+  /* min takes in 2 values - 1 fixed, 1 relative or proportional.
+min will choose the smaller */
+  width: min(100% - 48px, 70rem);
+  margin-inline: auto;
+}
+
+/* ------------------------- */
+/* header------------------ */
+
+header {
+  /* border: solid 3px red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-block: 20px;
+}
+
+/* #logo {
+  /* border: solid 2px blue; */
+/* } */
+
+ul {
+  /* border: solid 2px green; */
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li:last-child a {
+  color: white;
+  background-color: var(--blue);
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+li:last-child a:hover,
+li:last-child a:focus {
+  background-color: magenta;
+}
+
+/* li::marker {
+  color: red;} */
+
+a {
+  text-decoration: none;
+}
+
+/* a:hover,
+a:focus-visible {
+  background-color: red;
+} */
+
+/* a:focus {
+  background-color: red;
+} */
+
+/* banner ------------------*/
+
+#banner {
+  background-color: var(--lightblue);
+  padding-block: 200px;
+  /* padding block is top and bottom padding */
+  background-image: url(bgimage.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+
+  /* background-image: linear-gradient(33deg, cyan, magenta, yellow); */
+}
+
+#banner .container {
+  text-align: center;
+}
+
+#banner h1 {
+  color: white;
+}
+
+#banner p {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 23px;
+  /* max-width: 700px; */
+  text-align: center;
+  /* border: 1px red solid; */
+  justify-content: center;
+}
+
+#services {
+  padding-block: 70px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.card {
+  border: solid var(--gray) 1px;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-basis: calc(33% - 20px);
+  flex-grow: 1;
+}
+
+/* hashtag for an ID */
+/* period for a class */
+.card i {
+  font-size: 30px;
+  color: var(--blue);
+}
+
+h2 {
+  /* border: solid blue 2px; */
+  flex-basis: 100%;
+  text-align: center;
+}
+
+.buttons {
+  color: white;
+  display: inline-flex;
+  gap: 35px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.buttons a {
+  text-decoration: underline;
+  color: white;
+}
+
+footer {
+  background-color: lightgray;
+  display: flex;
+  padding-block: 50px;
+}
+
+#links {
+  display: flex;
+  gap: 10px;
+  /* justify-content: space-evenly; */
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
