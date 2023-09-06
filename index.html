@@ -34,7 +34,7 @@
         <h1>This is a level 1 heading</h1>
         <br />
         <p>
-          There are 140px of padding on the top and bottom of this banner
+          There are 200px of padding on the top and bottom of this banner
           section. There is also a max-width of 700px on this paragraph. Lorem
           ipsum dolor sit amet consectetur adipisicing elit. Harum ullam
           recusandae dolor voluptatum unde at!
@@ -42,7 +42,9 @@
         <br />
         <div class="buttons">
           <button type="button"><p>Sign Up</p></button>
-          <a href="#"><p>Learn more</p></a>
+          <!-- <a href="#"><p>Learn more</p></a> -->
+          <!-- remove <p> fixes hover styling but loses inherited size/style -->
+          <a href="#">Learn more</a>
         </div>
       </div>
     </div>

@@ -149,8 +149,9 @@ a:focus-visible {
 .buttons a {
   text-decoration: underline;
   color: white;
+  font-size: 23px;
 }
-#banner a:hover {
+.buttons a:hover {
   color: magenta;
 }
 
@@ -167,7 +168,8 @@ a:focus-visible {
   flex-wrap: wrap;
   color: white;
   font-size: 23px;
-  /* max-width: 700px; */
+  margin: 0 auto;
+  max-width: 700px;
   text-align: center;
   /* border: 1px red solid; */
   justify-content: center;
