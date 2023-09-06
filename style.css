@@ -223,6 +223,7 @@ footer {
   gap: 10px;
   /* justify-content: space-evenly; */
   align-items: center;
-  margin: 0;
+  margin-left: auto;
+  /* margin left auto is so important for getting links separated to the other side! */
   padding: 0;
 }
